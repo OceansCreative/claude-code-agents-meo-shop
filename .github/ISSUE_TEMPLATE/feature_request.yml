@@ -1,0 +1,54 @@
+name: 機能リクエスト / Feature Request
+description: 新しいエージェント・改善提案・業種例の追加など / Suggest a new agent, improvement, or industry example
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提案ありがとうございます。実装方針を相談する場として活用してください。
+        Thanks for suggesting. This is the place to discuss before opening a PR.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: リクエストの種類 / Request type
+      options:
+        - 新エージェント / New agent
+        - 既存エージェントの改善 / Improvement to existing agent
+        - 業種例の追加 / New industry example
+        - ドキュメント / Documentation
+        - その他 / Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 解決したい課題 / Problem to solve
+      description: どんな店舗運営の課題を解決したいですか？ / What store-business problem does this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容 / Proposal
+      description: エージェントの責務・想定される対話例など / Agent responsibility, example dialogue, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 補足 / Additional context
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: 行動規範 / Code of Conduct
+      options:
+        - label: このプロジェクトの [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) に従います / I agree to follow the Code of Conduct
+          required: true

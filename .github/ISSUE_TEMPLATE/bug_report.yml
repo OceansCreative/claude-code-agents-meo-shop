@@ -1,0 +1,56 @@
+name: バグ報告 / Bug Report
+description: エージェントの挙動の不具合を報告する / Report a bug in agent behavior
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます。可能な範囲でご記入ください。
+        Thanks for reporting. Fill in what you can.
+
+  - type: input
+    id: agent
+    attributes:
+      label: 該当エージェント / Affected agent
+      placeholder: "例: meo-strategist"
+    validations:
+      required: true
+
+  - type: input
+    id: claude-code-version
+    attributes:
+      label: Claude Code バージョン / Claude Code version
+      placeholder: "例: 1.0.x"
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した挙動 / Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の挙動 / Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順または CLAUDE.md 抜粋 / Reproduction steps or CLAUDE.md snippet
+      render: markdown
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: 行動規範 / Code of Conduct
+      options:
+        - label: このプロジェクトの [Code of Conduct](../blob/main/CODE_OF_CONDUCT.md) に従います / I agree to follow the Code of Conduct
+          required: true
