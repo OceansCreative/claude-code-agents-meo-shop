@@ -1,5 +1,9 @@
 # Claude Code Agents for MEO Shop
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Release](https://img.shields.io/github/v/release/OceansCreative/claude-code-agents-meo-shop)](https://github.com/OceansCreative/claude-code-agents-meo-shop/releases)
+[![Stars](https://img.shields.io/github/stars/OceansCreative/claude-code-agents-meo-shop?style=social)](https://github.com/OceansCreative/claude-code-agents-meo-shop/stargazers)
+
 > 店舗ビジネス（飲食・美容・治療院・小売）のひとりオーナー向け、Claude Code サブエージェント集。
 > MEO・口コミ管理・地域マーケ・SNS 運用・カスタマージャーニー・年間販促を AI で加速する。
 
